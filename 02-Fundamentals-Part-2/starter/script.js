@@ -1,7 +1,9 @@
 function logger() {
     console.log("You've got this, Sara!");
 }
-
+// calling invoking running
+//! these types of functions are used only when I want to reuse the block of code over and over again
+// not returning a value, so we don't save the "result" to a variable
 logger();
 logger();
 logger();
@@ -17,3 +19,11 @@ console.log(appleJuice);
 
 const orangeJuice = fruitProcessor(0,10);
 console.log(orangeJuice);
+
+function taco(tortilla, protein){
+    const tacoType = `Taco type: ${tortilla} and ${protein}`;
+    return tacoType;
+}
+// console.log(taco('flour', 'chicken'));
+
+
