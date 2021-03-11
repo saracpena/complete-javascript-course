@@ -21,9 +21,13 @@ const orangeJuice = fruitProcessor(0,10);
 console.log(orangeJuice);
 
 function taco(tortilla, protein){
-    const tacoType = `Taco type: ${tortilla} and ${protein}`;
+    const tacoType = `I'd like a ${protein} burrito in a ${tortilla} tortilla`;
     return tacoType;
 }
 // console.log(taco('flour', 'chicken'));
 
+const chickenBurrito = taco('flour','chicken');
+console.log(chickenBurrito);
 
+const beefBurrito = taco('corn', 'beef');
+console.log(beefBurrito);
