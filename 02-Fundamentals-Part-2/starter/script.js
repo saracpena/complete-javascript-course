@@ -173,3 +173,12 @@ scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);//! testing it works
 checkWinner(scoreDolphins, scoreKoalas);
+
+//!
+
+function inThreePersons(a,b,c){
+    return a + b + c;
+}
+const trinity = inThreePersons('Father ', 'Son ', 'Holy Spirit');
+
+console.log(trinity);
