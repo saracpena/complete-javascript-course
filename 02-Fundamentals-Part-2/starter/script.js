@@ -118,3 +118,49 @@ function calcAge0(birthYear, firstName) {
 }
 
 const age1 = calcAge0(1985, 'Sara');
+
+//! POP QUIZ:
+//todo : first attempt
+// const calcAverage = (a, b, c) => {
+//     const average = a + b + c / 3;
+//     return average;
+// }
+//todo: correct attempt
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+console.log(calcAverage(3,4,5));//!testing it works
+
+// Test 1
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(85,54,41);
+console.log(scoreDolphins, scoreKoalas);//! testing it works
+
+
+//todo: first attempt
+// function checkWinner(avgDolphins, avgKoalas){
+//     const dolphins = calcAverage(avgDolphins);
+//     const koalas = calcAverage(avgKoalas);
+
+//     if(dolphins > koalas){
+//         return dolphins;
+//     } else {
+//         return koalas;
+//     }
+
+    // const score = `Dolphins average score is ${dolphins} and Koalas average score is ${koalas}`;
+    // return score;
+// }
+
+// console.log(checkWinner([44,23,71],[85,54,41]));
+
+//todo: correct attempt
+const checkWinner = function(avgDolphins, avgKoalas){
+    if(avgDolphins >= 2 * avgKoalas) {
+        console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+    } else if (avgKoalas >= 2 * avgDolphins) {
+        console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+    } else {
+      console.log("No team wins...");
+    }
+}
+
+checkWinner(scoreDolphins, scoreKoalas);
