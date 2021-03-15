@@ -119,6 +119,7 @@ function calcAge0(birthYear, firstName) {
 
 const age1 = calcAge0(1985, 'Sara');
 
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //! POP QUIZ:
 //todo : first attempt
 // const calcAverage = (a, b, c) => {
@@ -129,9 +130,10 @@ const age1 = calcAge0(1985, 'Sara');
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 console.log(calcAverage(3,4,5));//!testing it works
 
+
 // Test 1
-const scoreDolphins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(85,54,41);
+let scoreDolphins = calcAverage(44, 23, 71);
+let scoreKoalas = calcAverage(85,54,41);
 console.log(scoreDolphins, scoreKoalas);//! testing it works
 
 
@@ -163,4 +165,11 @@ const checkWinner = function(avgDolphins, avgKoalas){
     }
 }
 
+checkWinner(scoreDolphins, scoreKoalas);
+checkWinner(5000, 230);//! checkWinner is independent
+
+// Test 2 because I used let above I don't need to re-declare variable, just call them with new data
+scoreDolphins = calcAverage(85, 54, 41);
+scoreKoalas = calcAverage(23, 34, 27);
+console.log(scoreDolphins, scoreKoalas);//! testing it works
 checkWinner(scoreDolphins, scoreKoalas);
